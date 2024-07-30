@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove horizontal scrollbar */
+body {
+  overflow-x: hidden;
+}
+
+.slideshow {
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+  position: relative;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.9;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots li button:before {
+  color: rgb(133, 22, 22);
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}
+
+.custom-dots {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-dots li {
+  margin: 0 5px;
+}
+
+.slideshow-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif; /* Professional font */
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.slideshow-text .luxurious {
+  color: white;
+}
+
+.slideshow-text .hotel {
+  color: red;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none; /* Remove any borders */
+  padding: 12px 24px;
+  margin: 0 10px; /* Ensure buttons are next to each other */
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif; /* Same font for consistency */
+}
+
+button i {
+  margin-right: 10px;
+}
+
+.explore-button {
+  background-color: #e50914; /* Professional red */
+  color: white;
+}
+
+.book-button {
+  background-color: white;
+  color: #333;
+}
+
+.explore-button:hover, .book-button:hover {
+  opacity: 0.9; /* Subtle hover effect */
+}
+
+.explore-button i, .book-button i {
+  color: inherit; /* Icon color matches text color */
+}
